@@ -1,0 +1,23 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class News extends Model
+{
+    protected $primaryKey = 'id';
+
+
+    protected $fillable = [
+        'title',
+        'short_name',
+        'content',
+        'short_discription',
+        'img_path',
+        'user_id',
+        'category_id'
+    ];
+
+
+}
